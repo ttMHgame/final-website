@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       
+body {
+  
+  background-color: rgb(255, 255, 255);
+            border:0px;
+            margin:0px; 
+}
+
+
+.typewriter h1 {
+  color: rgb(84, 221, 5);
+  
+  overflow: hidden;
+  
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  font-size: 2vw;
+  text-align: center;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+    
+    
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+        
+        .blue{
+           
+            color:rgb(47, 230, 77);
+        }
+        .nav{
+            border: 1px solid rgba(255, 255, 255, 0);
+          
+            background-color:rgb(57, 105, 235);
+        }
+       
+        .nav-col{
+            transition: background 0.5s ease-in-out;
+            float: left;
+            width:25%;
+        }
+        .nav-col:hover{
+            background-color:rgba(67, 67, 177, 0.692);
+        }
+        a{
+            clear:left;
+            color:black;
+            text-decoration: none;
+            font-size: 4vw;
+            text-align: center;
+            
+        
+            
+            
+        }
+        p{
+            font-size: 4vw;
+        }
+        a:hover{
+            color:black;
+        }
+        .center{
+            text-align:center;
+        }
+       
+        .middle{
+            background-color: black;
+            
+            
+            margin: 0px;
+        }
+        #o{
+            margin-left: auto;
+            margin-right:auto;
+            padding:70px;
+            margin:0px;
+
+            
+        }
+        .flex-container{
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        </style>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <nav>
+     <div class="nav">
+        <div class="nav-col" ><a href="" id="string">Game Night</h1></div>
+        <div class="nav-col"><a href="Event.html">Event</a></div>
+        <div class="nav-col"><a href="">Buy</a></div>
+        <div class="nav-col"><a href="#contact">Contact Us</a></div>
+        <div style="clear:left"></div>
+
+    </div> 
+</nav>
+   
+    
+    <div class="flex-container">
+        
+<img src="download.jpg">
+<img src="crime_scene.png" width="10%">
+        <P>HI</P>
+        <P>HI</P>
+    </div>
+
+</div>
+<script>
+
+var anounce= ["Welcome to the website","All the announcements will be posted here","Post no#2","this is post number 2"];
+   var e = setTimeout(ree,10)
+    function ree(){
+    
+    for(i = 0;i < anounce.length;i++){
+        if(i % 2 ==0){
+        var node = document.createElement("div");
+        var node3 = document.createElement("br");
+        var node2 = document.createElement("h1");
+        var node4 = document.createElement("p");
+        var text = document.createTextNode(anounce[i]);
+        var text2 = document.createTextNode(anounce[i+1]);
+        node.setAttribute("id","MainCol"+i ,"string", "class","MainCol");
+        node.setAttribute( "class","MainCol");
+        
+        node2.setAttribute("class","center");
+       node4.setAttribute("class","center");
+        node4.appendChild(text2);
+        node.appendChild(node2);
+        node2.appendChild(text);
+      
+        document.getElementById("jav").appendChild(node);
+        document.getElementById("MainCol"+i).appendChild(node4);
+        document.getElementById("jav").appendChild(node3);
+        document.cookie = "ok";
+        }
+        
+    }
+    }
+  function find(){
+      //Doesnt currently work
+    // var s = document.getElementById("string");
+     // var  a = document.getElementById('myInput').value;
+    
+     // var rgxp = new RegExp(a, "m");
+     // alert(s.match(rgxp));
+      // document.getElementById(a);
+       //s.replace(a,'<span style="background-color="green""></span>');
+       //document.getElementById("string").innerHTML = s;
+   }
+</script>
+
+</body>
+</html>
