@@ -2,7 +2,7 @@
 <html>
 <head>
     <style>
-      
+    /* styleing for gallery.html */
 body{
     border: 0px;
     margin:0px;
@@ -83,6 +83,7 @@ body{
 	<meta charset="utf-8" />
 </head>
 <body>
+    <!-- the nav bar -->
     <nav>
      <div class="nav">
         <div class="nav-col" ><a href="index.html" id="string">Game Night</h1></div>
@@ -93,10 +94,11 @@ body{
 
     </div> 
 </nav>
-   
+   <!-- lightbox -->
     <div id="overlay" onclick="hide()">
         
     </div>
+<!-- all imageg are added to the div with the id of imgs -->
     <div class="flex-container" id="imgs">
         
 
@@ -105,18 +107,18 @@ body{
 
 </div>
 <script>
-
-var anounce= ["wide.png","wide.png"];
+//  any image name added to the images array will be added in the flexbox
+var images = ["wide.png"];
    var e = setTimeout(ree,10)
     function ree(){
     
-    for(i = 0;i < anounce.length;i++){
+    for(i = 0;i < images.length;i++){
         if(i % 2==0){
         var node = document.createElement("img");
        
         
         
-        node.setAttribute("src",anounce[i]);
+        node.setAttribute("src",images[i]);
         node.setAttribute("style","width:250px");
        
         node.setAttribute("onclick","img(this)");
@@ -142,6 +144,7 @@ var anounce= ["wide.png","wide.png"];
        //s.replace(a,'<span style="background-color="green""></span>');
        //document.getElementById("string").innerHTML = s;
    }
+   // function for the lightbox
    function img(img){
        var im = img.src;
        var node = document.createElement("img");
@@ -152,7 +155,7 @@ var anounce= ["wide.png","wide.png"];
        
        document.getElementById("overlay").appendChild(node);
        document.getElementById("overlay").style.display = "block";
-       alert(im);
+      
        
    }
    function hide(){

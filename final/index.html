@@ -2,7 +2,7 @@
 <html>
 <head>
     <style>
-       
+       /* THE styleing for the index.html webpae */
 body {
   
   background-color: rgb(255, 255, 255);
@@ -13,7 +13,7 @@ body {
 
 
   
-        .blue{
+        .green{
            
             color:rgb(47, 230, 77);
         }
@@ -58,14 +58,8 @@ body {
             
             margin: 0px;
         }
-        #o{
-            margin-left: auto;
-            margin-right:auto;
-            padding:70px;
-            margin:0px;
-
-            
-        }
+      
+        
         .flex-container{
             display:flex;
             flex-wrap: wrap;
@@ -76,9 +70,10 @@ body {
 	<meta charset="utf-8" />
 </head>
 <body>
+    <!-- the nav bar -->
     <nav>
      <div class="nav">
-        <div class="nav-col" ><a href="index.html" id="string">Game Night</h1></div>
+        <div class="nav-col" ><a href="index.html" >Game Night</h1></div>
         <div class="nav-col"><a href="about.html">About</a></div>
         <div class="nav-col"><a href="gallery.html">Gallery</a></div>
         <div class="nav-col"><a href="contact.html">Contact Us</a></div>
@@ -87,14 +82,14 @@ body {
     </div> 
 </nav>
    
-    
+    <!-- all announcements will be added under the div with the id of jav-->
    <div id="jav">
 
 
    </div>
 </div>
 <script>
-
+//  anything in the anounce array will be added to the document as the announcements
 var anounce= ["Welcome to the website","All the announcements will be posted here","Post no#2","this is post number 2","yes its post no 2","post number 3","test post number 3. it works"];
    var e = setTimeout(ree,10)
     function ree(){
